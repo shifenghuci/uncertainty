@@ -18,7 +18,7 @@ This repo is heavily inspired by [Javier's repo](https://github.com/javiferran/s
 
 ## Importance documentation
 1. [ActivationCache, monitoring activation on each layer](https://transformerlensorg.github.io/TransformerLens/generated/code/transformer_lens.ActivationCache.html)
-
+2. [TransformerLens official tutorial](https://colab.research.google.com/github/neelnanda-io/TransformerLens/blob/main/demos/Main_Demo.ipynb)
 
 ## Setup code
 ``` sh
