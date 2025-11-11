@@ -6,12 +6,14 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "certifi>=2025.10.5",
+    "compressed-tensors>=0.12.2",
     "datasets>=4.4.1",
     "einops>=0.8.1",
     "fancy-einsum>=0.0.3",
     "ipykernel>=7.1.0",
     "ipywidgets>=8.1.8",
     "jaxtyping>=0.3.3",
+    "llama-cpp-python>=0.3.16",
     "numpy>=2.3.4",
     "pandas>=2.3.3",
     "ruff>=0.14.4",

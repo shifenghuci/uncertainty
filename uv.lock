@@ -320,6 +320,21 @@ wheels = [
 ]
 
 [[package]]
+name = "compressed-tensors"
+version = "0.12.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "loguru" },
+    { name = "pydantic" },
+    { name = "torch" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a2/79/4c5c1cd14266f8cf2650bdb940f986ce7fcaeb56aad8cfa9e9afedf14e2f/compressed_tensors-0.12.2.tar.gz", hash = "sha256:5bb40856dd17f128ab73557ecc73799f80db4dd82fab6de875f1e6899b9ea0c4", size = 190409, upload_time = "2025-10-07T14:30:59.302Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f0/c0/1695b87d369e6652ec0d650912e02eca2151c5e9c29244f94d2afccfe970/compressed_tensors-0.12.2-py3-none-any.whl", hash = "sha256:e554ea761710ca2b0c0ea49276a4ef8e08658624f1591e6a7368817106b48fbe", size = 183049, upload_time = "2025-10-07T14:30:56.523Z" },
+]
+
+[[package]]
 name = "config2py"
 version = "0.1.44"
 source = { registry = "https://pypi.org/simple" }
@@ -390,6 +405,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/12/80/630b4b88364e9a8c8c5797f4602d0f76ef820909ee32f0bacb9f90654042/dill-0.4.0.tar.gz", hash = "sha256:0633f1d2df477324f53a895b02c901fb961bdbf65a17122586ea7019292cbcf0", size = 186976, upload_time = "2025-04-16T00:41:48.867Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/50/3d/9373ad9c56321fdab5b41197068e1d8c25883b3fea29dd361f9b55116869/dill-0.4.0-py3-none-any.whl", hash = "sha256:44f54bf6412c2c8464c14e8243eb163690a9800dbe2c367330883b19c7561049", size = 119668, upload_time = "2025-04-16T00:41:47.671Z" },
+]
+
+[[package]]
+name = "diskcache"
+version = "5.6.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3f/21/1c1ffc1a039ddcc459db43cc108658f32c57d271d7289a2794e401d0fdb6/diskcache-5.6.3.tar.gz", hash = "sha256:2c3a3fa2743d8535d832ec61c2054a1641f41775aa7c556758a109941e33e4fc", size = 67916, upload_time = "2023-08-31T06:12:00.316Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3f/27/4570e78fc0bf5ea0ca45eb1de3818a23787af9b390c0b0a0033a1b8236f9/diskcache-5.6.3-py3-none-any.whl", hash = "sha256:5e31b2d5fbad117cc363ebaf6b689474db18a1f6438bc82358b024abd4c2ca19", size = 45550, upload_time = "2023-08-31T06:11:58.822Z" },
 ]
 
 [[package]]
@@ -836,6 +860,31 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/26/2d/ef58fed122b268c69c0aa099da20bc67657cdfb2e222688d5731bd5b971d/jupyterlab_widgets-3.0.16.tar.gz", hash = "sha256:423da05071d55cf27a9e602216d35a3a65a3e41cdf9c5d3b643b814ce38c19e0", size = 897423, upload_time = "2025-11-01T21:11:29.724Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/b5/36c712098e6191d1b4e349304ef73a8d06aed77e56ceaac8c0a306c7bda1/jupyterlab_widgets-3.0.16-py3-none-any.whl", hash = "sha256:45fa36d9c6422cf2559198e4db481aa243c7a32d9926b500781c830c80f7ecf8", size = 914926, upload_time = "2025-11-01T21:11:28.008Z" },
+]
+
+[[package]]
+name = "llama-cpp-python"
+version = "0.3.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "diskcache" },
+    { name = "jinja2" },
+    { name = "numpy" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e4/b4/c8cd17629ced0b9644a71d399a91145aedef109c0333443bef015e45b704/llama_cpp_python-0.3.16.tar.gz", hash = "sha256:34ed0f9bd9431af045bb63d9324ae620ad0536653740e9bb163a2e1fcb973be6", size = 50688636, upload_time = "2025-08-15T04:58:29.212Z" }
+
+[[package]]
+name = "loguru"
+version = "0.7.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+    { name = "win32-setctime", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3a/05/a1dae3dffd1116099471c643b8924f5aa6524411dc6c63fdae648c4f1aca/loguru-0.7.3.tar.gz", hash = "sha256:19480589e77d47b8d85b2c827ad95d49bf31b0dcde16593892eb51dd18706eb6", size = 63559, upload_time = "2024-12-06T11:20:56.608Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl", hash = "sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c", size = 61595, upload_time = "2024-12-06T11:20:54.538Z" },
 ]
 
 [[package]]
@@ -2370,12 +2419,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "certifi" },
+    { name = "compressed-tensors" },
     { name = "datasets" },
     { name = "einops" },
     { name = "fancy-einsum" },
     { name = "ipykernel" },
     { name = "ipywidgets" },
     { name = "jaxtyping" },
+    { name = "llama-cpp-python" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "ruff" },
@@ -2389,12 +2440,14 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "certifi", specifier = ">=2025.10.5" },
+    { name = "compressed-tensors", specifier = ">=0.12.2" },
     { name = "datasets", specifier = ">=4.4.1" },
     { name = "einops", specifier = ">=0.8.1" },
     { name = "fancy-einsum", specifier = ">=0.0.3" },
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "jaxtyping", specifier = ">=0.3.3" },
+    { name = "llama-cpp-python", specifier = ">=0.3.16" },
     { name = "numpy", specifier = ">=2.3.4" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "ruff", specifier = ">=0.14.4" },
@@ -2468,6 +2521,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bd/f4/c67440c7fb409a71b7404b7aefcd7569a9c0d6bd071299bf4198ae7a5d95/widgetsnbextension-4.0.15.tar.gz", hash = "sha256:de8610639996f1567952d763a5a41af8af37f2575a41f9852a38f947eb82a3b9", size = 1097402, upload_time = "2025-11-01T21:15:55.178Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/3f/0e/fa3b193432cfc60c93b42f3be03365f5f909d2b3ea410295cf36df739e31/widgetsnbextension-4.0.15-py3-none-any.whl", hash = "sha256:8156704e4346a571d9ce73b84bee86a29906c9abfd7223b7228a28899ccf3366", size = 2196503, upload_time = "2025-11-01T21:15:53.565Z" },
+]
+
+[[package]]
+name = "win32-setctime"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b3/8f/705086c9d734d3b663af0e9bb3d4de6578d08f46b1b101c2442fd9aecaa2/win32_setctime-1.2.0.tar.gz", hash = "sha256:ae1fdf948f5640aae05c511ade119313fb6a30d7eabe25fef9764dca5873c4c0", size = 4867, upload_time = "2024-12-07T15:28:28.314Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e1/07/c6fe3ad3e685340704d314d765b7912993bcb8dc198f0e7a89382d37974b/win32_setctime-1.2.0-py3-none-any.whl", hash = "sha256:95d644c4e708aba81dc3704a116d8cbc974d70b3bdb8be1d150e36be6e9d1390", size = 4083, upload_time = "2024-12-07T15:28:26.465Z" },
 ]
 
 [[package]]

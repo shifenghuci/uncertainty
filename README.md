@@ -1,4 +1,5 @@
 # Goal
+
 Trying to get a hang of minimal mech interp workflow.
 
 This repo is heavily inspired by [Javier's repo](https://github.com/javiferran/sae_entities)
@@ -7,20 +8,28 @@ This repo is heavily inspired by [Javier's repo](https://github.com/javiferran/s
 
 ---
 
-## Key libraries:
+## Miscellaneous link
+
+1. [uv package manager cheatsheet](https://mathspp.com/blog/uv-cheatsheet)
+
+## Key libraries
+
 1. `transformerLens` - load hooked (monitored) transformer models.
 2. `sae-lens` - load trained sae model
 
 ## Reference files from Javier's repo
+
 1. `utils/sae-utils.py` - sae_encode and sae_decode func definition
 2. `mech_interp/uncertain_features.py` - sae feature extraction
 3. `mech_interp/hooks_.util.py` - steer_sae_latents, ablate_sae_latents
 
 ## Importance documentation
+
 1. [ActivationCache, monitoring activation on each layer](https://transformerlensorg.github.io/TransformerLens/generated/code/transformer_lens.ActivationCache.html)
 2. [TransformerLens official tutorial](https://colab.research.google.com/github/neelnanda-io/TransformerLens/blob/main/demos/Main_Demo.ipynb)
 
 ## Setup code
+
 ``` sh
 uv init uncertainty
 cd uncertainty
@@ -29,6 +38,7 @@ uv lock
 ```
 
 ## Key lines
+
 ``` python
 from transformer-lens import HookedTransformer
 from sae-lens import SAE
@@ -69,5 +79,3 @@ feature_activations = sae_features[0, active_feature]
 
 
 #### Steering ####
-
-```
