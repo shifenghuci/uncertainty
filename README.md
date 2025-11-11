@@ -15,6 +15,11 @@ This repo is heavily inspired by [Javier's repo](https://github.com/javiferran/s
 1. `utils/sae-utils.py` - sae_encode and sae_decode func definition
 2. `mech_interp/uncertain_features.py` - sae feature extraction
 3. `mech_interp/hooks_.util.py` - steer_sae_latents, ablate_sae_latents
+
+## Importance documentation
+1. [ActivationCache, monitoring activation on each layer](https://transformerlensorg.github.io/TransformerLens/generated/code/transformer_lens.ActivationCache.html)
+
+
 ## Setup code
 ``` sh
 uv init uncertainty
@@ -47,8 +52,8 @@ activations = cache['blocks.15.hook_resid_pre']
 
 # load sae for the specific layer of the hookedTransformers
 sae, cfg_dict, sparsity = SAE.from_pretrain{
-	release = 'llama_scope_lxr_8x',
-	sae-id = 'l15r_8x',
+	release = 'llama_scope_lxr_8x', # this and sae-id is pretty random and organization dependent.
+	sae-id = 'l15r_8x', # 15th layer, residual stream, 8x expansion factor
 	device = 'mps' if torch.backends.mps.is_available() else 'cpu',
 	# device = 'cuda' if torch.cuda_is_available() else 'cpu',
 }
